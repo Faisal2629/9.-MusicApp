@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Playlist Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Music Playlist Manager</h1>
+    <nav>
+      <input type="text" id="search-bar" placeholder="Search by title or artist" />
+      <select id="sort-options">
+        <option value="title">Sort by Title</option>
+        <option value="artist">Sort by Artist</option>
+        <option value="duration">Sort by Duration</option>
+        <option value="genre">Sort by Genre</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-song">
+      <h2>Add New Song</h2>
+      <input type="text" id="song-title" placeholder="Title" required />
+      <input type="text" id="song-artist" placeholder="Artist" required />
+      <input type="number" id="song-duration" placeholder="Duration (minutes)" required />
+      <select id="song-genre">
+        <option value="rock">Rock</option>
+        <option value="pop">Pop</option>
+        <option value="jazz">Jazz</option>
+        <option value="classical">Classical</option>
+      </select>
+      <button id="add-song-btn">Add Song</button>
+    </section>
+
+    <section id="playlist">
+      <h2>Your Playlist</h2>
+      <ul id="song-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Music Playlist Manager</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

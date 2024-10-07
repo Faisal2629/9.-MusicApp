@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #add-song input, #add-song select, #add-song button {
+    margin: 10px 0;
+    display: block;
+  }
+  
+  #playlist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .song-item {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .song-item button {
+    margin-left: 10px;
+  }
+  
